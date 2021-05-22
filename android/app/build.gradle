@@ -152,6 +152,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('cryptoTracker.keystore')
+            storePassword 'cryptoTracker'
+            keyAlias 'cryptoTracker'
+            keyPassword 'cryptoTracker'
+        }
     }
     buildTypes {
         debug {
